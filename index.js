@@ -23,7 +23,7 @@ fetch(`https://rickandmortyapi.com/api/location/${valorAleatorio}`)
             document.body.classList.add('red-bg');
         }
 
-        fetch(`https://rickandmortyapi.com/api/character/1,${valorAleatorio}`)
+        fetch(`https://rickandmortyapi.com/api/character/,${valorAleatorio}`)
             .then(response => response.json())
             .then(residentsData => {
                 console.log("residentsData",residentsData)
